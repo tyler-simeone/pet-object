@@ -14,6 +14,16 @@ let myPet = {
     }
 };
 
-myPet.bark();
-myPet.pant();
-myPet.growl();
+// myPet.bark();
+// myPet.pant();
+// myPet.growl();
+
+myPet.favoriteToys = [];
+myPet.play = function(toy) {
+    const likesToy = true;
+    if (likesToy) {
+        this.favoriteToys.push(toy);
+    }
+};
+myPet.play("stuffed animal");
+console.log(myPet.favoriteToys);
